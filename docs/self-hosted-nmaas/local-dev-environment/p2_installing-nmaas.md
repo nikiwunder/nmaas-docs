@@ -209,6 +209,7 @@ Once the values.yaml file has been customized, NMaaS can be deployed by executin
 
 ```bash
 helm repo add nmaas https://artifactory.software.geant.org/artifactory/nmaas-helm
+helm repo update
 helm install -f nmaas-values.yaml --namespace nmaas-system nmaas --version 1.1.2 nmaas/nmaas
 ```
 
